@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra Papel o tijera</title>
+</head>
+<!--Fondo de la pagina-->
+<body style = "background-image: url(Imagenes/Fondo.webp); background-size: cover; background-repeat: no-repeat;">
+    <!--Centrar div-->
+    <div style = "text-align:center; margin-top:20px; margin-bottom: 50px;">
+        <h1>Piedra Papel o Tijera</h1>
+        <!--Diseño de imagenes-->
+        <img src="Imagenes/tijera.png" id = "imagen1" alt = "jugador1"; style = "width: 300px; height: 300px; border-radius: 10%">
+        <img src="Imagenes/Versus.png" id = "imagen2" alt = "jugador1"; style = "width: 300px; height: 300px; border-radius: 10%">
+        <img src="Imagenes/Papel.png" id = "imagen3" alt = "jugador1"; style = "width: 300px; height: 300px; border-radius: 10%">
+    </div>
+
+    <div id="btn-eleccion" style="text-align: center;"></div>
+    <!--Centrar div-->
+    <div style = "text-align: center; margin-top: 50px; margin-bottom: 50px;">
+        <!--Diseño de botones-->
+        <button class = "btn-eleccion" id = "btn-Piedra"; style = "width:100px; height:40px; border-radius: 10%; font-size: 20px; background-color: cadetblue;">Piedra</button>
+        <button class = "btn-eleccion" id = "btn-Papel"; style = "width: 100px; height: 40px; border-radius: 10%; font-size: 20px; background-color: burlywood;">Papel</button>
+        <button class = "btn-eleccion" id = "btn-Tijera"; style = "width: 100px; height: 40px; border-radius: 10%; font-size: 20px; background-color: blanchedalmond;">Tijera</button>
+    </div>
+    <!--Llamar el archivo donde se encuentra la clase-->
+    <script src="ppt.js"></script>
+    <script>
+        //Crear la instancia
+        let juego1 = new Juego();
+        juego1.eleccion();
+    </script>
+</body>
+</html>
